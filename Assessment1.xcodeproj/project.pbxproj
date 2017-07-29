@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6A28AD91F2C1A0F00786B97 /* NotesAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A28AD81F2C1A0F00786B97 /* NotesAvailable.swift */; };
 		B6E938DA1ED87AED00083008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E938D91ED87AED00083008 /* AppDelegate.swift */; };
-		B6E938DC1ED87AED00083008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E938DB1ED87AED00083008 /* ViewController.swift */; };
 		B6E938DF1ED87AED00083008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E938DD1ED87AED00083008 /* Main.storyboard */; };
 		B6E938E11ED87AED00083008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E938E01ED87AED00083008 /* Assets.xcassets */; };
 		B6E938E41ED87AED00083008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E938E21ED87AED00083008 /* LaunchScreen.storyboard */; };
+		B6E938EC1ED87B8800083008 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E938EB1ED87B8800083008 /* Note.swift */; };
+		B6E938F01ED87DEE00083008 /* NoteEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E938EF1ED87DEE00083008 /* NoteEntryTableViewController.swift */; };
+		B6E938F61ED8807800083008 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E938F51ED8807800083008 /* NoteController.swift */; };
+		B6E938F81ED8868B00083008 /* NotesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E938F71ED8868B00083008 /* NotesDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6A28AD81F2C1A0F00786B97 /* NotesAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesAvailable.swift; sourceTree = "<group>"; };
 		B6E938D61ED87AED00083008 /* Assessment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E938D91ED87AED00083008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6E938DB1ED87AED00083008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6E938DE1ED87AED00083008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6E938E01ED87AED00083008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E938E31ED87AED00083008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E938E51ED87AED00083008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E938EB1ED87B8800083008 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B6E938EF1ED87DEE00083008 /* NoteEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteEntryTableViewController.swift; sourceTree = "<group>"; };
+		B6E938F51ED8807800083008 /* NoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		B6E938F71ED8868B00083008 /* NotesDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		B6E938D81ED87AED00083008 /* Assessment1 */ = {
 			isa = PBXGroup;
 			children = (
-				B6E938D91ED87AED00083008 /* AppDelegate.swift */,
-				B6E938DB1ED87AED00083008 /* ViewController.swift */,
+				B6E938F41ED87EB400083008 /* Model Controller */,
+				B6E938F11ED87DF300083008 /* View Controller */,
+				B6E938ED1ED87B8C00083008 /* Model */,
+				B6E938EE1ED87B9800083008 /* Resources */,
+			);
+			path = Assessment1;
+			sourceTree = "<group>";
+		};
+		B6E938ED1ED87B8C00083008 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6E938EB1ED87B8800083008 /* Note.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6E938EE1ED87B9800083008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B6E938DD1ED87AED00083008 /* Main.storyboard */,
+				B6E938D91ED87AED00083008 /* AppDelegate.swift */,
 				B6E938E01ED87AED00083008 /* Assets.xcassets */,
 				B6E938E21ED87AED00083008 /* LaunchScreen.storyboard */,
 				B6E938E51ED87AED00083008 /* Info.plist */,
 			);
-			path = Assessment1;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B6E938F11ED87DF300083008 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6E938F71ED8868B00083008 /* NotesDetailsViewController.swift */,
+				B6E938EF1ED87DEE00083008 /* NoteEntryTableViewController.swift */,
+				B6A28AD81F2C1A0F00786B97 /* NotesAvailable.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		B6E938F41ED87EB400083008 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6E938F51ED8807800083008 /* NoteController.swift */,
+			);
+			name = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E938DC1ED87AED00083008 /* ViewController.swift in Sources */,
+				B6E938F81ED8868B00083008 /* NotesDetailsViewController.swift in Sources */,
+				B6E938EC1ED87B8800083008 /* Note.swift in Sources */,
+				B6E938F61ED8807800083008 /* NoteController.swift in Sources */,
+				B6E938F01ED87DEE00083008 /* NoteEntryTableViewController.swift in Sources */,
 				B6E938DA1ED87AED00083008 /* AppDelegate.swift in Sources */,
+				B6A28AD91F2C1A0F00786B97 /* NotesAvailable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +352,7 @@
 				B6E938EA1ED87AED00083008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
